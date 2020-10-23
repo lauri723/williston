@@ -1,0 +1,89 @@
+body #home {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.home {
+    min-height: calc(100vh - 60px);
+    display: flex;
+    justify-content: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: var(--font-size-four);
+    color: var(--color-three);
+}
+
+#title-name {
+    font-family: 'Comic Neue', cursive;
+    color: var(--color-one);
+    font-size: var(--font-size-one);
+    text-shadow: 3px 3px 3px var(--color-two);
+}
+
+.bio-list { 
+    margin-left: 1em;
+}
+
+footer {
+    color: var(--color-four);
+    background-color: var(--color-background-three);
+    width: 100%; 
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    font-size: var(--font-size-ten);
+    z-index: 999px;
+}
+
+footer a {
+   color: var(--color-one); 
+   font-size: var(--font-size-eight);
+}
+
+footer a:hover {
+    color: var(--color-six);
+}
+
+footer .fas, .fab {
+    font-size: var(--font-size-five);
+    padding-bottom: 10px;
+    align-items: flex-start;
+    text-shadow: 2px 2px var(--color-two);
+}
+
+@media only screen and (max-width: 1200px) {
+    #memoji {
+        margin-top: 3em;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    #memoji {
+        width: 90%;
+        margin: auto;
+    }
+    footer a {
+        color: var(--color-one); 
+        font-size: var(--font-size-nine);
+     }
+     
+     footer a:hover {
+         color: var(--color-six)
+     }
+     
+     footer .fas, .fab {
+         font-size: var(--font-size-seven);
+         padding-bottom: 0px;
+         text-shadow: 1px 1px var(--color-two);
+     }
+}
+
+@media only screen and (max-width: 595px) {
+    #title-name {
+        font-size: var(--font-size-six);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+

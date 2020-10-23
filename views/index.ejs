@@ -1,0 +1,62 @@
+<%- include('./partials/head.ejs') %>
+<body id="home" style="background: linear-gradient(to right, var(--color-background-one), var(--color-background-two), var(--color-background-three));">
+<%- include('./partials/header.ejs') %>
+
+
+<div class="container home">
+    <div class="row">
+        <div class="col-md-6 d-none d-lg-block bio px-3 mx-auto my-5 pt-5">
+            <p id="title-name" class="my-md-4">Williston Family</p>
+            <ul class="bio-list"> 
+                <li>Jason lives baseball</li>
+                <li>Hannah has x-ray vision</li>
+                <li>Addison loves to read</li>
+                <li>Sadie is super silly</li>
+                <li>Elton has a thing for trucks</li>
+            </ul>
+        </div>
+        <div class="col-md-6 d-none d-lg-block photo px-4 mx-auto mb-5">
+            <img class="img-fluid" id="memoji" src="/images/willistons.jpeg" alt="">
+        </div>
+
+        <div class="d-block bio d-lg-none">
+            <div class="m-auto">
+                <p id="title-name" class="my-md-3">Williston Family</p>
+            </div>
+            <div class="photo pl-5 pb-5 m-auto mb-5">
+                <img class="img-fluid" id="memoji" src="/images/willistons.jpeg" alt="">
+            </div>
+            <div class="mb-5 pb-5">
+                <ul class="bio-list"> 
+                    <li>Jason lives baseball</li>
+                    <li>Hannah has x-ray vision</li>
+                    <li>Addison loves to read</li>
+                    <li>Sadie is super silly</li>
+                    <li>Elton has a thing for trucks</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="row pt-sm-3 text-center">
+        <div class="col-sm-5 mb-0 text-center">
+            <p class="mb-0">© Williston Family, 2020, All Rights Reserved</p>
+        </div>
+        <div class="col-sm-2  icons text-center">
+            <a class="email" href="mailto:info@wombwithaviewultrasound.com?
+                      subject=Contact">
+                      <i class="fas fa-envelope-square"></i></a>
+            <a class="facebook" href="https://www.facebook.com/hannah.williston.9"><i class="fab fa-facebook px-3"></i></a>
+        </div>
+        <div class="col-sm-5 text-center">
+            <p class="lovely">Website designed and produced by <a href="http://lovelywebdesigns.com/">LovelywebDesigns</a></p>
+        </div>
+    </div>
+
+</footer>
+
+
+    <%- include('./partials/footer.ejs') %>

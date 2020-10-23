@@ -1,0 +1,123 @@
+ 
+  .article-details {
+    display: flex;
+  }
+  
+  .card-article {
+    background-color: var(--color-six);
+    width: 34rem;
+    margin: auto;
+    margin-top: 1rem;
+    padding: 1rem;
+    box-shadow: 12px 12px 10px rgba(0, 0, 0, 0.2),
+      -12px -12px 10px rgba(0, 0, 0, 0.2);
+  
+  }
+  
+  .card-title-article, .card-title-article-show {
+    color: var(--color-four);
+    margin-bottom: 2rem;
+  }
+
+  .card-article-show {
+    width: 70%;
+    max-width: 800px;
+    margin: auto;
+    padding: 0rem;
+  }
+  
+  .card-article-desc {
+    color: var(--color-four);
+    font-size: 1.4em;
+    font-style: oblique;
+  }
+
+  .card-article-markdown {
+    color: var(--color-three);
+    font-size: 1.1em;
+    margin: auto 2em;
+  }
+  
+  .btn-article-show {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 2em;
+  }
+  
+  
+  .article-details-topic-button {
+    display: flex;
+    margin: auto;
+    margin-bottom: 3rem;
+    justify-content: center;
+    width: 40%;
+    max-width: 600px;
+  }
+  
+  .btn.btn-article-new, .btn.btn-article-edit {
+    margin-right: 2em;
+  }
+
+  .btn-article-new-edit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+  }
+  
+  .btn-article-search {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  @media only screen and (max-width: 1200px) {
+    .btn-new-edit {
+      margin-right: 4em;
+    }
+  }
+  
+  @media only screen and (max-width: 1085px) {
+    .card-article-show {
+      width: 90%;
+    }
+  }
+  
+  
+  @media only screen and (max-width: 700px) {
+    .inner-container {
+      margin: 0rem;
+    }
+    .card-article-show {
+      width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .card-article {
+      width: 26rem;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .card-body {
+      padding: 5px;
+    }
+    .card-article {
+      width: 18rem;
+    }
+    .card-body-article-show {
+      padding: 0px;
+      padding-top: 1em;
+      padding-bottom: 1em;
+    }
+  } 
+
+@media only screen and (max-width: 300px) {
+    .card-article {
+      width: 14rem;
+    }
+  }
+     
+  
+

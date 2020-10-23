@@ -1,0 +1,34 @@
+<%- include('../partials/head.ejs') %>
+<body class="photos">
+    <%- include('../partials/header.ejs') %>
+    <div class="inner-container">
+      <%- include('../partials/errorMessage.ejs') %>
+      <%- include('../partials/headerPhotos') %>
+      <div>
+        <a class="btn btn-primary btn-album photo-details-album-button" href="/albums/<%= photo.album.id %>">Album: <%= photo.album.name %></a>
+      </div>
+      <div class="card card-show my-4">
+        <div class="card-body-show text-center mt-3">
+          <h1 class="card-title-show"><%= photo.title %></h1> 
+          <img class="photo-cover img-fluid" src="<%= photo.coverImagePath %>">
+          <p class="card-text card-desc mt-3 pb-3"><%= photo.description %></p>
+           
+        </div>
+      </div>
+      <div>
+        <a class="btn btn-primary photo-details-album-button" href="/photos">All Photos</a>
+       </div>
+      <div class="btn-show">
+        <% if(currentUser){ %>
+          <a class="btn btn-primary btn-edit" href="/photos/<%= photo.id %>/edit">Edit</a>
+          <%- include('../partials/deleteForm', { url: `/photos/${photo.id}` }) %> 
+        <% } %>
+      </div> 
+    </div>
+  
+  <%- include('../partials/footer.ejs') %>
+
+
+
+
+  

@@ -1,0 +1,50 @@
+.bg-custom {
+    background-color: var(--color-background-one);
+    height: 9%;
+    width: 100%;
+    position: relative;
+    left: 0;
+}
+
+.navbar-toggler-icon {
+    background-color: var(--color-one);
+}
+
+.navbar-toggle.collapsed {
+    background-color: var(--color-four) !important;
+}
+
+btn:focus, a:focus {
+         outline: none;
+}
+.navbar-toggler:focus {
+         outline: none !important;
+         box-shadow: none;
+}
+
+#navbarNav a.nav-link {
+    color: var(--color-five);
+    font-size: 1.4em;
+    font-weight: 600;
+    text-shadow: 1px 1px var(--color-six);
+}
+
+#navbarNav a.nav-link:hover {
+    color:var(--color-one);
+}
+
+a.nav-link {
+    color: var(--color-four);
+    font-size: 1.6em;
+}
+
+a.nav-link:hover {
+    color:var(--color-one);
+}
+
+@media only screen and (max-width: 992px) {
+    #navbarNav a.nav-link {
+        background-color: var(--color-background-one);
+    }
+} 
+

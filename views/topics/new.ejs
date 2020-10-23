@@ -1,0 +1,17 @@
+<%- include('../partials/head.ejs') %>
+<body class="topics">
+    <%- include('../partials/header.ejs') %>
+    <div class="inner-container">
+      <%- include('../partials/errorMessage.ejs') %>
+      <%- include('../partials/headerArticles') %>
+      <h2 class="page-header text-center mb-5">New Topic</h2>
+      <form action="/topics" method="POST">
+        <%- include('_form_fields') %>
+        <div class="form-row btn-topic-new-edit btn-row">
+          <button class="btn btn-topic-create btn-primary" type="submit">Create</button>
+          <a class="btn btn-topic-cancel btn-danger" href="/topics">Cancel</a>
+        </div>
+      </form>
+    </div>
+
+<%- include('../partials/footer.ejs') %>

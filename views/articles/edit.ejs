@@ -1,0 +1,17 @@
+<%- include('../partials/head.ejs') %>
+<body class="articles" style="background: linear-gradient(to right, #dde6f8, #e5faf9);">
+    <%- include('../partials/header.ejs') %>
+    <div class="inner-container">
+      <%- include('../partials/errorMessage.ejs') %>
+      <%- include('../partials/headerArticles') %>
+      <h2 class="page-header text-center mb-5">Edit Story</h2>
+      <form action="/articles/<%= article.id %>?_method=PUT" method="POST">
+        <%- include('_form_fields') %>
+        <div class="form-row btn-article-new-edit btn-row"> 
+          <button class="btn btn-article-edit btn-primary" type="submit">Update</button>
+          <a class="btn btn-danger" href="/articles">Cancel</a>
+        </div>
+      </form>
+    </div>
+
+<%- include('../partials/footer.ejs') %>

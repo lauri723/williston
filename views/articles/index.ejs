@@ -1,0 +1,13 @@
+<%- include('../partials/head.ejs') %>
+<body class="articles">
+      <%- include('../partials/header.ejs') %>
+      <div class="inner-container">
+        <%- include('../partials/errorMessage.ejs') %>
+        <%- include('../partials/headerArticles') %>
+          <%- include('../partials/articleGrid', { articles: articles }) %>
+      </div>
+
+    <%- include('../partials/footer.ejs') %>
+
+
+  

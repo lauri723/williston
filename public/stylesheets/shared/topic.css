@@ -1,0 +1,54 @@
+.topic-row {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-bottom: 1rem;
+  }
+  
+  .topic-name {
+    font-size: 1.5rem;
+    color: var(--color-four);
+  }
+
+  .form-topic, .form-topic-search {
+    margin: auto;
+    width: 50%;
+  }
+  
+  .form-item-topic {
+    color: var(--color-four);
+  }
+
+  .btn-topic {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 2em;
+  }
+  
+  .btn-topic-view {
+    margin-right: 1em;
+    margin-left: 1em;
+  }
+  
+  .btn-topic-create , .btn-topic-cancel {
+    margin-right: 2em;
+  }
+
+  .btn-topic-new-edit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+  }
+  
+  .btn-topic-search {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  @media only screen and (max-width: 992px) {
+    .form-topic, .form-topic-search, .btn-topic-new {
+      margin: auto;
+    }
+  }

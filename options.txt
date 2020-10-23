@@ -1,0 +1,268 @@
+Gray tones
+
+--color-background-one: #bab9b6;
+--color-background-two: #d2d2d0;
+--color-background-three: #e4e0d8;
+--color-background-four: #f8f7f5;
+/* home-name/nav/header/buttons */
+--color-one: #2c2e2c;
+--color-two: #5f635f;
+/* form-text/markdown-text/messages/buttons */
+--color-three: #2c2e2c;
+/* labels/hovers */
+--color-four: #141514;
+/* input-background/navbar/hover */
+--color-five: #e0e1e0;
+/* card-background/hover/text-shadow */
+--color-six: #fafafa;
+Note: buttons.css -> .btn-primary -> color: var(--color-five);
+
+
+Lovely webDesigns
+
+--color-background-one: #86a8e7;
+--color-background-two: #dde6f8;
+--color-background-three: #e5faf9;
+--color-background-four: #91eae4;
+/* home-name/nav/header/buttons */
+--color-one: #ff00cc;
+--color-two: #99007a;
+/* form-text/markdown-text/messages/buttons */
+--color-three: #333399;
+/* labels/hovers */
+--color-four: #030330;
+/* input-background/navbar/hover */
+--color-five: #d3d3e6;
+/* card-background/hover/text-shadow */
+--color-six: #f2f2f8;
+Note: buttons.css -> .btn-primary -> color: var(--color-four);
+
+
+Dark Peacock
+
+--color-background-one: #0c5c62;
+--color-background-two: #25d7e4;
+--color-background-three: #0092db;
+--color-background-four: #002b40;
+/* home-name/nav/header/buttons */
+--color-one: #ffd2ea;
+--color-two: #ff6bba;
+/* form-text/markdown-text/messages/buttons */
+--color-three: #a5638f;
+/* labels/hovers */
+--color-four: #683c59;
+/* input-background/navbar/hover */
+--color-five: #fff3fb;
+/* card-background/hover/text-shadow */
+--color-six: #fffafd;
+}
+Note: buttons.css -> .btn-primary -> color: var(--color-four);
+
+
+Rust to Gray tones
+
+--color-background-one: #bc4504;
+--color-background-two: #e15205;
+--color-background-three: #bdbfc1;
+--color-background-four: #a3a5a8;
+/* home-name/nav/header/buttons */
+--color-one: #401c04;
+--color-two: #6e3007;
+/* form-text/markdown-text/messages/buttons */
+--color-three: #123763;
+/* labels/hovers */
+--color-four: #02060b;
+/* input-background/navbar/hover */
+--color-five: #eae7e1;
+/* card-background/hover/text-shadow */
+--color-six: #f7f6f4;
+Note: buttons.css -> .btn-primary -> color: var(--color-five);
+
+
+Blue on blue
+
+--color-background-one: #85a1c1;
+--color-background-two: #c9d5e4;
+--color-background-three: #e4e7ec;
+--color-background-four: #c6ccd8;
+/* home-name/nav/header/buttons */
+--color-one: #274b69;
+--color-two: #193043;
+/* form-text/markdown-text/messages/buttons */
+--color-three: #3f4d63;
+/* labels/hovers */
+--color-four: #202022;
+/* input-background/navbar/hover */
+--color-five: #ebeff5;
+/* card-background/hover/text-shadow */
+--color-six: #f9fafb;
+Note: buttons.css -> .btn-primary -> color: var(--color-five);
+
+
+Pink on pink
+
+--color-background-one: #f090d9;
+--color-background-two: #f6bce8;
+--color-background-three: #f8d3f2;
+--color-background-four: #f2a2e4;
+/* home-name/nav/header/buttons */
+--color-one: #fefbfb;
+--color-two: #f7e8e8;
+/* form-text/markdown-text/messages/buttons */
+--color-three: #841561;
+/* labels/hovers */
+--color-four: #2c0720;
+/* input-background/navbar/hover */
+--color-five: #fbe4f7;
+/* card-background/hover/text-shadow */
+--color-six: #fbe4f7;
+}
+Note: buttons.css -> .btn-primary -> color: var(--color-four);
+
+
+Yellow
+
+--color-background-one: #ffd369;
+--color-background-two: #fff1d1;
+--color-background-three: #fff8e5;
+--color-background-four: #fff1cf;
+/* home-name/nav/header/buttons */
+--color-one: #015668;
+--color-two: #012e38;
+/* form-text/markdown-text/messages/buttons */
+--color-three: #6b4b00;
+/* labels/hovers */
+--color-four: #263f44;
+/* input-background/navbar/hover */
+--color-five: #d19200;
+/* card-background/hover/text-shadow */
+--color-six: #fafeff;
+}
+Note: buttons.css -> .btn-primary -> color: var(--color-five);
+
+
+Blue-gray
+
+--color-background-one: #d4daed;
+--color-background-two: #e4e8f5;
+--color-background-three: #e4e8f5;
+--color-background-four: #d4daed;
+/* home-name/nav/header/buttons */
+--color-one: #610000;
+--color-two: #990000;
+/* form-text/markdown-text/messages/buttons */
+--color-three: #525975;
+/* labels/hovers */
+--color-four: #0e1220;
+/* input-background/navbar/hover */
+--color-five: #f8f9fc;
+/* card-background/hover/text-shadow */
+--color-six: #ffffff;
+}
+Note: buttons.css -> .btn-primary -> color: var(--color-five);
+
+
+Green-gray
+
+--color-background-one: #d9e4dd;
+--color-background-two: #e7eeea;
+--color-background-three: #e1dedb;
+--color-background-four: #cdc9c3;
+/* home-name/nav/header/buttons */
+--color-one: #5f866e;
+--color-two: #354b3d;
+/* form-text/markdown-text/messages/buttons */
+--color-three: #6e6e6e;
+/* labels/hovers */
+--color-four: #555555;
+/* input-background/navbar/hover */
+--color-five: #fdfbf7;
+/* card-background/hover/text-shadow */
+--color-six: #fefdfb;
+}
+Note: buttons.css -> .btn-primary -> color: var(--color-five);
+
+
+Purple to pink
+
+--color-background-one: #7f78d2;
+--color-background-two: #c9c6ec;
+--color-background-three: #f6ccff;
+--color-background-four: #efb1ff;
+/* home-name/nav/header/buttons */
+--color-one: #da33ff;
+--color-two: #a700cc;
+/* form-text/markdown-text/messages/buttons */
+--color-three: #4339ac;
+/* labels/hovers */
+--color-four: #481380;
+/* input-background/navbar/hover */
+--color-five: #ffe2ff;
+/* card-background/hover/text-shadow */
+--color-six: #fff5ff;
+}
+Note: buttons.css -> .btn-primary -> color: var(--color-four);
+
+
+Dusty rose to aqua
+
+--color-background-one: #c7aabc;
+--color-background-two: #efe6ec;
+--color-background-three: #e7ecef;
+--color-background-four: #a9bcc6;
+/* home-name/nav/header/buttons */
+--color-one: #513e5c;
+--color-two: #36293d;
+/* form-text/markdown-text/messages/buttons */
+--color-three: #03567c;
+/* labels/hovers */
+--color-four: #02334a;
+/* input-background/navbar/hover */
+--color-five: #e0f3f6;
+/* card-background/hover/text-shadow */
+--color-six: #f7fcfd;
+}
+Note: buttons.css -> .btn-primary -> color: var(--color-five);
+
+
+Gray with green
+
+--color-background-one: #bab9b6;
+--color-background-two: #d2d2d0;
+--color-background-three: #e4e0d8;
+--color-background-four: #f8f7f5;
+/* home-name/nav/header/buttons */
+--color-one: #002500;
+--color-two: #000a00;
+/* form-text/markdown-text/messages/buttons */
+--color-three: ##002500;
+/* labels/hovers */
+--color-four: #000a00;
+/* input-background/navbar/hover */
+--color-five: #e0e1e0;
+/* card-background/hover/text-shadow */
+--color-six: #fafafa;
+}
+Note: buttons.css -> .btn-primary -> color: var(--color-five);
+
+
+Orange to yellow
+
+--color-background-one: #e4734f;
+--color-background-two: #f8dcd3;
+--color-background-three: #fff7d6;
+--color-background-four: #ffe26f;
+/* home-name/nav/header/buttons */
+--color-one: #cc4165;
+--color-two: #85233d;
+/* form-text/markdown-text/messages/buttons */
+--color-three: #6d3580;
+/* labels/hovers */
+--color-four: #2e1735;
+/* input-background/navbar/hover */
+--color-five: #f3ceda;
+/* card-background/hover/text-shadow */
+--color-six: #fdf7f9;
+}
+Note: buttons.css -> .btn-primary -> color: var(--color-five);
+

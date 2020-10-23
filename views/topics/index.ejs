@@ -1,0 +1,39 @@
+
+<%- include('../partials/head.ejs') %>
+<body class="topics">
+    <%- include('../partials/header.ejs') %>
+    <div class="inner-container">
+      <%- include('../partials/errorMessage.ejs') %>
+      <%- include('../partials/headerArticles') %>
+      <h2 class="page-header text-center mb-5">Search Topics</h2>
+      <div class="form-topic-search">
+        <form action="/topics" method="GET">
+          <div class="form-row">
+            <div class="form-item form-item-topic">
+              <label>Name</label>
+              <input type="text" name="name" value="<%= searchOptions.name %>">
+            </div>
+          </div>
+          <div class="form-row form-row-end">
+            <button class="btn btn-primary mb-4" type="submit">Search</button>
+          </div>
+        </form>
+        <br>
+        <% topics.forEach(topic => { %>
+          <div class="topic-row">
+            <div class="topic-name"><%= topic.name %></div>
+            <div class="btn-row btn-topic-search">
+              <a class="btn btn-primary" href="/topics/<%= topic.id %>">View</a>
+              <% if(currentUser){ %>
+                <a class="btn btn-primary btn-topic-view" href="/topics/<%= topic.id %>/edit">Edit</a>
+                <%- include('../partials/deleteForm',
+                            { url: `/topics/${topic.id}` }) %>
+              <% } %>}
+            </div>
+          </div>
+        <% }) %>
+      </div> 
+    </div>
+
+<%- include('../partials/footer.ejs') %>
+

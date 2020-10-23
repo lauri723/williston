@@ -1,0 +1,26 @@
+
+  <div class="form-item form-item-article">
+    <label>Title</label>
+    <input type="text" name="title" value="<%= article.title %>">
+  </div>
+  <div class="form-item form-item-article">
+    <label>Topic</label>
+    <select name="topic">
+      <% topics.forEach(topic => { %>
+        <% if (topic.id === article.topic) { %>
+          <option selected label="<%= topic.name %>" value="<%= topic.id %>">
+        <% } else { %>
+          <option label="<%= topic.name %>" value="<%= topic.id %>">
+        <% } %>
+      <% }) %>
+    </select>
+  </div>
+  <div class="form-item form-item-article">
+    <label>Description</label>
+    <textarea name="description"><%= article.description %></textarea>
+  </div>
+  <div class="form-item form-item-article">
+    <label for="markdown">Story</label>
+    <textarea required name="markdown" id="markdown" rows="10" ><%= article.markdown %></textarea>
+  </div>
+</div>
