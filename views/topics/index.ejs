@@ -23,12 +23,12 @@
           <div class="topic-row">
             <div class="topic-name"><%= topic.name %></div>
             <div class="btn-row btn-topic-search">
-              <a class="btn btn-primary" href="/topics/<%= topic.id %>">View</a>
+              <a class="btn btn-primary" href="/topics/<%= topic.slug %>">View</a>
               <% if(currentUser){ %>
                 <a class="btn btn-primary btn-topic-view" href="/topics/<%= topic.id %>/edit">Edit</a>
                 <%- include('../partials/deleteForm',
                             { url: `/topics/${topic.id}` }) %>
-              <% } %>}
+              <% } %>
             </div>
           </div>
         <% }) %>

@@ -34,7 +34,7 @@ router.post('/', isLoggedIn, async (req, res) => {
   })
   try {
     const newTopic = await topic.save()
-    res.redirect(`topics/${newTopic.id}`)
+    res.redirect(`topics/${newTopic.slug}`)
   } catch {
     res.render('topics/new', {
       topic: topic,
@@ -43,9 +43,9 @@ router.post('/', isLoggedIn, async (req, res) => {
   }
 })
 
-router.get('/:id', async (req, res) => {
+router.get('/:slug', async (req, res) => {
   try {
-    const topic = await Topic.findById(req.params.id)
+    const topic = await Topic.findOne({ slug: req.params.slug })
     const articles = await Article.find({ topic: topic.id }).limit(6).exec()
     res.render('topics/show', {
       topic: topic,
@@ -71,7 +71,7 @@ router.put('/:id', isLoggedIn, async (req, res) => {
     topic = await Topic.findById(req.params.id)
     topic.name = req.body.name
     await topic.save()
-    res.redirect(`/topics/${topic.id}`)
+    res.redirect(`/topics/${topic.slug}`)
   } catch {
     if (topic == null) {
       res.redirect('/')
@@ -94,7 +94,7 @@ router.delete('/:id', isLoggedIn, async (req, res) => {
     if (topic == null) {
       res.redirect('/')
     } else {
-      res.redirect(`/topics/${topic.id}`)
+      res.redirect(`/topics/${topic.slug}`)
     }
   }
 })

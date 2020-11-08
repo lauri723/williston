@@ -21,7 +21,7 @@ body #home {
 }
 
 .bio-list { 
-    margin-left: 1em;
+    margin-left: 2em;
 }
 
 footer {
@@ -58,19 +58,33 @@ footer .fas, .fab {
 }
 
 @media only screen and (max-width: 992px) {
+    #title-name {
+        margin: 1.5em auto .5em;
+        display: flex;
+        justify-content: center;
+        padding-top: 1em;
+    }
+    ul.bio-respond {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 1em auto 5em;
+    }
     #memoji {
         width: 90%;
+        display: flex;
+        justify-content: center;
         margin: auto;
     }
     footer a {
-        color: var(--color-one); 
+        color: var(--color-one);
         font-size: var(--font-size-nine);
      }
-     
+
      footer a:hover {
          color: var(--color-six)
      }
-     
+
      footer .fas, .fab {
          font-size: var(--font-size-seven);
          padding-bottom: 0px;
@@ -80,10 +94,18 @@ footer .fas, .fab {
 
 @media only screen and (max-width: 595px) {
     #title-name {
+        margin-top: 2em;
         font-size: var(--font-size-six);
         display: flex;
         justify-content: center;
         align-items: center;
+        padding-top: 0em;
     }
 }
 
+@media only screen and (max-width: 420px) {
+    ul.bio-respond {
+        display: flex;
+        align-items: flex-start;
+    }
+}

@@ -5,16 +5,8 @@
       <%- include('../partials/errorMessage.ejs') %>
       <%- include('../partials/headerArticles') %>
 
-      <h2 class="page-header text-center mb-5"><%= topic.name %></h2>
-      <div class="btn-row btn-topic">
-        <% if(currentUser){ %>
-          <a class="btn btn-primary" href="/topics/<%= topic.id %>/edit">Edit</a>
-          <%- include('../partials/deleteForm',
-                      { url: `/topics/${topic.id}` }) %>
-        <% } %>
-      </div>
+      <h2 class="page-header text-center mb-5">Topic:  <%= topic.name %></h2>
       <% if (articlesByTopic.length > 0) { %>
-        <h2 class="page-header">Articles By Topic</h2>
         <%- include('../partials/articleGrid', { articles: articlesByTopic }) %>
       <% } %>
     </div>

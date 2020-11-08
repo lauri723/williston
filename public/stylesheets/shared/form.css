@@ -2,8 +2,6 @@
   display: flex;
   flex-direction: column;
   margin: auto 2rem;
-  flex-grow: 1;
-  flex-basis: 0;
   width: 50%;
   margin: auto;
 }
@@ -16,11 +14,6 @@
   flex-basis: 0;
   width: 50%;
   margin: auto;
-}
-
-
-.form-item-no-grow {
-  flex-grow: 0;
 }
 
 .form-row-filepond {
@@ -36,11 +29,10 @@
 }
 
 .form-item input, .form-item select, .form-item textarea {
-  height: 3rem;
   padding: .25rem .5rem;
   border: none;
   border-radius: .25rem;
-  background-color: var(--color-six);
+  background-color: var(--color-five);
   color: var(--color-three);
   font-size: 1.2rem;
   font-weight: normal;
@@ -49,14 +41,17 @@
   margin-bottom: 2rem;
 }
 
+.form-item input, .form-item select {
+  height: 3rem;
+}
+
 .filepond--root {
   font-family: 'Source Sans Pro', sans-serif;
   margin-bottom: 0;
 }
 
 .filepond--panel-root {
-  background-color: var(--color-six);
-  /* border: 1px solid var(--form-input-border-color); */
+  background-color: var(--color-five);
 }
 
 .filepond--drop-label {

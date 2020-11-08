@@ -10,10 +10,10 @@ const { forwardAuthenticated } = require('../config/auth');
 router.get('/login', forwardAuthenticated, (req, res) => res.render('login'));
 
 // Register Page
-router.get('/register', forwardAuthenticated, (req, res) => res.render('register'));
+router.get('/m1nAd5t3rR3g1', forwardAuthenticated, (req, res) => res.render('m1nAd5t3rR3g1'));
 
 // Register
-router.post('/register', (req, res) => {
+router.post('/m1nAd5t3rR3g1', (req, res) => {
   const { name, email, password, password2 } = req.body;
   let errors = [];
 
@@ -30,7 +30,7 @@ router.post('/register', (req, res) => {
   }
 
   if (errors.length > 0) {
-    res.render('register', {
+    res.render('m1nAd5t3rR3g1', {
       errors,
       name,
       email,
@@ -41,7 +41,7 @@ router.post('/register', (req, res) => {
     User.findOne({ email: email }).then(user => {
       if (user) {
         errors.push({ msg: 'Email already exists' });
-        res.render('register', {
+        res.render('m1nAd5t3rR3g1', {
           errors,
           name,
           email,

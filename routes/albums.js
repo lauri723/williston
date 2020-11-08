@@ -12,7 +12,7 @@ router.get('/', async (req, res) => {
     searchOptions.name = new RegExp(req.query.name, 'i')
   }
   try {
-    const albums = await Album.find(searchOptions)
+    const albums = await Album.find(searchOptions).sort({ createdAt: 'desc' })
     res.render('albums/index', {
       albums: albums,
       searchOptions: req.query
@@ -34,7 +34,7 @@ router.post('/', isLoggedIn, async (req, res) => {
   })
   try {
     const newAlbum = await album.save()
-    res.redirect(`albums/${newAlbum.id}`)
+    res.redirect(`albums/${newAlbum.slug}`)
   } catch {
     res.render('albums/new', {
       album: album,
@@ -43,10 +43,10 @@ router.post('/', isLoggedIn, async (req, res) => {
   }
 })
 
-router.get('/:id', async (req, res) => {
+router.get('/:slug', async (req, res) => {
   try {
-    const album = await Album.findById(req.params.id)
-    const photos = await Photo.find({ album: album.id }).limit(6).exec()
+    const album = await Album.findOne({ slug: req.params.slug })
+    const photos = await Photo.find({ album: album.id })
     res.render('albums/show', {
       album: album,
       photosByAlbum: photos
@@ -71,7 +71,7 @@ router.put('/:id', isLoggedIn, async (req, res) => {
     album = await Album.findById(req.params.id)
     album.name = req.body.name
     await album.save()
-    res.redirect(`/albums/${album.id}`)
+    res.redirect(`/albums/${album.slug}`)
   } catch {
     if (album == null) {
       res.redirect('/')
@@ -94,7 +94,7 @@ router.delete('/:id', isLoggedIn, async (req, res) => {
     if (album == null) {
       res.redirect('/')
     } else {
-      res.redirect(`/albums/${album.id}`)
+      res.redirect(`/albums/${album.slug}`)
     }
   }
 })

@@ -1,11 +1,25 @@
 const mongoose = require('mongoose')
 const Article = require('./article')
+const slugify = require('slugify')
 
 const topicSchema = new mongoose.Schema({
   name: {
     type: String,
     required: true
+  },
+  slug: {
+    type: String,
+    required: true,
+    unique: true
   }
+})
+
+topicSchema.pre('validate', function(next) {
+  if (this.name) {
+    this.slug = slugify(this.name + "-" + Math.floor(1000 + Math.random() * 9000), { lower: true, strict: true })
+  }
+
+  next()
 })
 
 topicSchema.pre('remove', function(next) {

@@ -3,8 +3,8 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 3rem;
-  margin-top: 3rem;
+  margin-bottom: 3%;
+  padding-top: 9%;
 }
 
 .header-nav ul {
@@ -18,7 +18,8 @@
 }
 
 .header-nav li a {
-  font-family: 'Comic Neue', cursive;
+
+  font-family: 'Comic Neue', cursive;  
   text-decoration: none;
   color: var(--color-one);
   font-size: var(--font-size-two);

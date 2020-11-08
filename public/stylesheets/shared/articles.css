@@ -1,8 +1,3 @@
- 
-  .article-details {
-    display: flex;
-  }
-  
   .card-article {
     background-color: var(--color-six);
     width: 34rem;
@@ -16,7 +11,8 @@
   
   .card-title-article, .card-title-article-show {
     color: var(--color-four);
-    margin-bottom: 2rem;
+    margin-top: 1em;
+    margin-bottom: 1rem;
   }
 
   .card-article-show {

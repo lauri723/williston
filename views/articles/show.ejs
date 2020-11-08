@@ -5,7 +5,7 @@
       <%- include('../partials/errorMessage.ejs') %>
       <%- include('../partials/headerArticles') %>
       <div>
-        <a class="btn btn-primary btn-album article-details-topic-button" href="/topics/<%= article.topic.id %>">Topic: <%= article.topic.name %></a>
+        <a class="btn btn-primary btn-album article-details-topic-button" href="/topics/<%= article.topic.slug %>">Topic: <%= article.topic.name %></a>
       </div> 
       <div class="row">
         <div class="col-12">
@@ -15,7 +15,7 @@
               <div class="card-subtitle text-muted mb-2">
                 <em><%= article.createdAt.toLocaleDateString() %></em>
               </div> 
-              <p class="card-text card-article-desc pb-5"><%= article.description %></p>
+              <p class="card-text card-article-desc pb-3"><%= article.description %></p>
               <div class="card-article-markdown"><%- article.sanitizedHtml %></div>
             </div>
           </div>

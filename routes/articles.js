@@ -9,7 +9,7 @@ const middleware = require("../middleware"),
 router.get('/', async (req, res) => {
   let articles
   try {
-    articles = await Article.find().sort({ createdAt: 'desc' }).limit(10).exec()
+    articles = await Article.find().sort({ createdAt: 'desc' })
   } catch {
     articles = []
   }

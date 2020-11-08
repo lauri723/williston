@@ -70,6 +70,11 @@
   font-style: oblique;
 }
 
+div.card-footer {
+  background-color: var(--color-six);
+  border: none;
+}
+
 .btn-show {
   display: flex;
   flex-direction: row;
@@ -95,8 +100,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 2em;
   margin-bottom: 2em;
 }
+
 
 @media only screen and (max-width: 1200px) {
   .card-show {
